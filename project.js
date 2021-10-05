@@ -10,7 +10,7 @@ let p2Score = 0;
 let isGameOver = false;
 let winningScore = 3;
 
-alert("Thanks for the Information.....");
+alert("Welcome to Score Board.....");
 setTimeout(()=>{alert("Now keep your Score here....")},300);
 
 winningscoreSelect.addEventListener('change',function(){
