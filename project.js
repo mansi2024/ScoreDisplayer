@@ -11,7 +11,7 @@ let isGameOver = false;
 let winningScore = 3;
 
 alert("Thanks for the Information.....");
-setTimeout(()=>{alert("Now keep your score here....")},300);
+setTimeout(()=>{alert("Now keep your Score here....")},300);
 
 winningscoreSelect.addEventListener('change',function(){
     winningScore = parseInt(this.value);
