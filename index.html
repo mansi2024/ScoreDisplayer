@@ -1,108 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score keeper</title>
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  
+
     <style>
-        .loser{
-            color:red;
+        .loser {
+            color: red;
         }
-        .winner{
-            color:green;
+
+        .winner {
+            color: green;
         }
+/* 
+
+        @media (min-width: 576px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            html {
+                font-size: 20px;
+            }
+        } */
+
+        /* .card-footer {
+            width: 33rem;
+        } */
+
     </style>
-   
+
 </head>
+
 <body class="has-background-info-dark">
     <section>
-   <section class="section" >
-       <div class="container">
-           <div class="columns">
-               <div class = "column is-8 is-offset-one-fifth">
-<div class="card" >
-    <div class="card-image">
-        <figure class="image is-3by1">
-            <img src="https://images.unsplash.com/photo-1601646761285-65bfa67cd7a3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMzQ1MTU2Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" alt="">
-        </figure>
-    </div>
-        <header class="card-header">
-          <p class="card-header-title has-text-centered is-size-2">
-                  Tennis Game Score keeper
-          </p>
-          <button class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </button>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <h1 class="is-size-1 has-text-centered" ><span id = "p1Display">0</span> to <span id = "p2Display">0</span></h1>
-            <p class="subtitles has-text-centered is-size-5">Use the buttons below to keep score.</p>
-            <form action="C:\Users\91821\OneDrive\Pictures\Score Displayer\thanks.html">
-                <button id="button" class="button is-link is-outlined is-medium">Submit!</button>
-                </form>     
-            </form>
-            
-            <label for="playTo" class="label is-large is-inline">Choose Limit</label>
-            <div class="select is-rounded">
-                <select name="" id = "playTo">
-                    <option value="3" >3</option>
-                    <option value="4" >4</option>
-                    <option value="5" >5</option>
-                    <option value="6" >6</option>
-                    <option value="7" >7</option>
-                    <option value="8" >8</option>
-                    <option value="9" >9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-              
-               </select>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8 is-offset-one-fifth">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-3by1">
+                                    <img src="https://images.unsplash.com/photo-1601646761285-65bfa67cd7a3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMzQ1MTU2Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <header class="card-header">
+                                <p class="card-header-title has-text-centered is-size-2">
+                                    Tennis Game Score keeper
+                                </p>
+                                <button class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h1 class="is-size-1 has-text-centered"><span id="p1Display">0</span> to <span
+                                            id="p2Display">0</span></h1>
+                                    <p class="subtitles has-text-centered is-size-5">Use the buttons below to keep
+                                        score.</p>
+                                    <form action="C:\Users\91821\OneDrive\Pictures\Score Displayer\thanks.html">
+                                        <button id="button"
+                                            class="button is-link is-outlined is-medium"> <a href="/submit.html"> Submit! </a> </button>
+                                    </form>
+                                    </form>
+
+                                    <label for="playTo" class="label is-large is-inline">Choose Limit</label>
+                                    <div class="select is-rounded">
+                                        <select name="" id="playTo">
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <button class="card-footer-item is-size-4 button is-success " id="button1">+1 Team A
+                                    Score</button>
+                                <button class="card-footer-item is-size-4 button is-info " id="button2">+1 Team B
+                                    Score</button>
+                                <button class="card-footer-item is-size-4 button is-danger " id="Reset">Reset </button>
+
+
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
-          
-          </div>
-        </div>    
-        <footer class="card-footer">
-            <button class = "card-footer-item is-size-4 button is-success " id = "button1">+1 Team A Score</button>
-            <button class = "card-footer-item is-size-4 button is-info " id = "button2">+1 Team B Score</button>
-            <button class = "card-footer-item is-size-4 button is-danger " id = "Reset">Reset </button>
-        
-         
-        </footer>
-      </div>
-           </div>
-       </div>
-    </div>
-   
-   </section>
+
+        </section>
 
     </section>
-   
-  
-   
-       
-<section class="section">
-    <div class="content is-large">
-        <h1 class="title is-1 has-text-centered has-text-weight-bold is-block has-text-white" >WELCOME TO SCORE BOARD!!!!</h1>
-    </div>
-    <div>
-    <h1 class="subtitle has-text-centered has-text-weight-bold is-block has-text-white-ter" >DISPLAY YOUR SCORE HERE...</h1>
-    
-
-</div>
-</section>
 
 
-    
+
+
+    <section class="section">
+        <div class="content is-large">
+            <h1 class="title is-1 has-text-centered has-text-weight-bold is-block has-text-white">WELCOME TO SCORE
+                BOARD!!!!</h1>
+        </div>
+        <div>
+            <h1 class="subtitle has-text-centered has-text-weight-bold is-block has-text-white-ter">DISPLAY YOUR SCORE
+                HERE...</h1>
+
+
+        </div>
+    </section>
+
+
+
     <script src="project.js"></script>
 </body>
+
 </html>
