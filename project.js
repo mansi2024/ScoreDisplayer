@@ -4,6 +4,7 @@ const resetButton = document.querySelector('#Reset')
 const p1button = document.querySelector('#button1');
 const p2button= document.querySelector('#button2');
 const winningscoreSelect = document.querySelector('#playTo')
+const SubmitButton = document.querySelector('#submit')
 
 let p1Score = 0;
 let p2Score = 0;
@@ -61,5 +62,9 @@ function reset(){
     p1Display.classList.remove('winner','loser');
     p2Display.classList.remove('winner','loser');
 }
+SubmitButton.addEventListener('click',SubmitEvent)
 
+function SubmitEvent(){
+    alert("Contgratulations!!🥳✨",200);
+}
 
